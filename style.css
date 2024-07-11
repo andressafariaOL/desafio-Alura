@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f5efe7;
+  margin: 5dvh;
+}
+.cabeca-abelha {
+  width: 5em;
+  height: 5rem;
+}
+.cabeca-titulo {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: auto;
+}
+.cabeca-logo {
+  display: flex;
+  margin-left: 2rem;
+}
+.corpo {
+  display: flex;
+}
+.corpo-pescoco {
+  background-color: transparent;
+  border: none;
+  resize: none;
+  font-size: large;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  margin: 2rem auto auto 4rem;
+  width: 20rem;
+  height: 10rem;
+  outline: 0;
+}
+.corpo-butao {
+  display: flex;
+  margin-top: 20rem;
+  margin-left: 2rem;
+}
+.corpo-umbigo1 {
+  gap: 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ceb78e;
+  border: none;
+  border-radius: 8px;
+  height: 4.5rem;
+  width: 15rem;
+  font-size: 1.5rem;
+  justify-content: center;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 300ms ease-in-out;
+}
+.corpo-umbigo1:hover {
+  transform: scale(0.9);
+}
+.corpo-umbigo2 {
+  gap: 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  border-color: #ceb78e;
+  border-radius: 8px;
+  height: 4.5rem;
+  width: 15rem;
+  font-size: 1.5rem;
+  justify-content: center;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 300ms ease-in-out;
+}
+.corpo-umbigo2:hover {
+  transform: scale(0.9);
+}
+.corpo-doenca {
+  margin: 1rem auto auto 7rem;
+  font-size: 1rem;
+  color: #495057;
+  font-family: "Courier New", Courier, monospace;
+}
+.braco-h2 {
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.15);
+  width: 25rem;
+  height: 35rem;
+  border-radius: 20px;
+  margin-left: 15rem;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.braco-output {
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.3rem;
+
+  text-align: center;
+  flex-direction: column;
+}
+
+.braco-palma {
+  margin-top: auto;
+  font-weight: 400;
+  font-family: "Volkhov", serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.copiar {
+  margin-top: 2%;
+  margin-left: 57%;
+  font-size: 1.3rem;
+  height: 4rem;
+  width: 10rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+.pe {
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+}
+.pe-direito {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.2rem;
+  gap: 0.3rem;
+  align-items: center;
+}
+.pe-esquerdo {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-size: 1.2rem;
+  flex-direction: row;
+  padding-left: 6px;
+}
+@media (max-width: 1024px) {
+  .corpo {
+    display: grid;
+  }
+  .cabeca {
+    margin-left: 13dvh;
+    margin-top: -2dvh;
+  }
+  .cabeca-abelha {
+    height: 15%;
+    width: 25%;
+    margin-top: auto;
+  }
+  .cabeca-titulo {
+    margin-top: 10%;
+  }
+  .corpo-pescoco {
+    margin: 5%;
+  }
+  .corpo-butao {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-left: -5%;
+    gap: 5%;
+  }
+  .corpo-doenca {
+    margin: 10% auto auto auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .braco-h2 {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: 15%;
+    padding: 5% 5% 50% 5%;
+  }
+  .copiar {
+    border: none;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 20%;
+    width: 60%;
+  }
+  .pe {
+    margin-top: 20%;
+  }
+}
+
+/*phone*/
+@media (max-width: 450px) {
+  .corpo {
+    display: grid;
+  }
+  .cabeca {
+    margin-top: -5%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+  }
+  .cabeca-abelha {
+    height: 15%;
+    width: 35%;
+    margin-top: auto;
+  }
+  .cabeca-titulo {
+    margin-top: 1.5rem;
+  }
+  .corpo-pescoco {
+    margin: 5%;
+  }
+  .corpo-butao {
+    display: grid;
+    margin-left: -10%;
+    gap: 20%;
+  }
+  .corpo-doenca {
+    margin: 15% auto auto auto;
+    justify-content: center;
+    text-align: center;
+    gap: 15%;
+  }
+  .braco-h2 {
+    width: 80%;
+    height: 30%;
+  }
+  .braco-palma {
+    margin-top: 5%;
+    margin-bottom: 50%;
+  }
+  .copiar {
+    border: none;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .pe {
+    margin-top: 20%;
+  }
+}

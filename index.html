@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Decodificador</title>
+ 
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon-32x32.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="cabeca">
+        <nav class="cabeca-logo">
+            <img src="imgs/design-de-logotipo-de-mascote-simples-de-abelha.png" alt="Desenho de uma abelha" class="cabeca-abelha">
+            <h1 class="cabeca-titulo">Secret Bee</h1>
+
+        </nav>
+
+    </header>
+
+
+    <main class="corpo">
+        <section class="corpo-tronco">
+            <textarea name="msg" id="msg" class="corpo-pescoco" placeholder="Escreva sua mensagem..."></textarea>
+          <div class="corpo-butao">
+              <button onclick="criptografar()" class="corpo-umbigo1">Criptografar</button>
+            <button onclick="descriptografar()" class="corpo-umbigo2">Descriptografar</button>
+        </div>
+            <p class="corpo-doenca">Letras maiúsculas e acentos serão removidos!</p>
+        </section>
+        <div class="braco"> 
+            <div class="braco-conteiner">     
+
+                 <div class="braco-h2">
+                    <p class="braco-output" ></p>
+                   <h2  class="braco-palma" id="para">Mensagem não encontrada!</h2>
+
+            </div>
+        <button onclick="copiar()" id="copy" class="copiar">Copiar</button>
+
+
+    </main>
+    
+    <footer class="pe">
+        <h6 class="pe-direito">Made by</h6>
+        <a class="pe-esquerdo" href="https://www.linkedin.com/in/andressa-faria1801/">Andressa Faria</a>
+    </footer>
+    <script src="app.js" ></script>
+</body>
+</html>
